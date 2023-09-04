@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7-css</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(23, 220, 255);
+        }
+
+        .container {
+            width: 50%;
+            height: 85vh;
+            margin: 50px 0 0px 25%;
+            background-color: rgb(49, 54, 50);
+        }
+        .container:hover{
+            background-color: rgba(69, 102, 102, 0.953);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            height: 85vh;
+            margin: 50px 0 0 15%;
+            color: white;
+            font-size: 20px;
+        }
+
+        .details {
+            padding: 5px;
+            border-radius: 7px;
+            border: none;
+        }
+
+        #submit {
+            margin-bottom: 19px;
+            width: 30vw;
+            height: 40px;
+            border-radius: 7px;
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #submit:hover {
+            background-color: rgb(130, 7, 77);
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        #about {
+            border-radius: 7px;
+            border: none;
+        }
+        #option{
+            padding: 7px;
+            border-radius: 7px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="https://nikhil1141.github.io/portfolio/" method="post">
+                <b>Name: <input type="text" name="name" placeholder="your name" class="details"></b>
+                <b>Email: <input type="text" name="email" placeholder="your email" class="details"></b>
+                <b>Password: <input type="password" name="password" class="details"></b>
+                <b>Phone Number: <input type="tel" name="phone" class="details"></b>
+                <b>Gender: <input type="radio" name="male">Male <input type="radio" name="male">Female</b>
+                <b>Language: <select name="language" id="option">
+                        <option value="sl">Select language</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="english">English</option>
+                    </select></b>
+                <b>Zip code: <input type="text" name="zipcode" class="details"></b>
+                <b>About: <textarea name="about" id="about" placeholder="write about yourself..."></textarea></b>
+                <input type="submit" name="submit" value="Register" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4-css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 50%;
+            height: 500px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .button1{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(12, 255, 146);
+            border-radius: 0 10px 10px 0;
+            margin-left: 0;
+        }
+        .button2{
+            margin-top: 120px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(55, 255, 255);
+            border-radius: 0 10px 10px 0;
+            margin-left: -100px;
+        }
+        .button3{
+            margin-top: 230px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 0 10px 10px 0;
+            margin-left: -100px;
+        }
+        .button4{
+            margin-top: 340px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(71, 64, 64);
+            border-radius: 0 10px 10px 0;
+            margin-left: -100px;
+        }
+        .button1:hover{
+            cursor: pointer;
+            background-color: rgb(2, 248, 76);
+            transition-delay: 0.5s smooth;
+        }
+        .button2:hover{
+            cursor: pointer;
+            background-color: rgb(1, 179, 255);
+            transition-delay: 1s smooth;
+        }
+        .button3:hover{
+            cursor: pointer;
+            background-color: rgb(221, 142, 142);
+            transition-delay: 1.5s smooth;
+        }
+        .button4:hover{
+            cursor: pointer;
+            background-color: rgb(113, 117, 114);
+            transition-delay: 2s smooth;
+        }
+        .line{
+            margin-left: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        h2{
+            margin: 0 0 0 30px;
+            padding-bottom: 45px;
+        }
+        h7{
+            margin: 30px 0 0 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button1"></div>
+        <div class="button2"></div>
+        <div class="button3"></div>
+        <div class="button4"></div>
+        <div class="line">
+        <h2>Hoverable Sidenav Buttons</h2> 
+        <h7> Hover over the buttons in the left side navigation to open them.</h7>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6-css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            margin: 0 30% 0 30%;
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 30px 0 0 25%;
+        }
+        .details{
+            margin: 30px 0 0 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        .inputs{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            cursor: not-allowed;
+            margin: 10px 0 0 -140px;
+        }
+        #login{
+            width: 370px;
+            height: 30px;
+            margin: 25px 0 0 -13%;
+            border-radius: 10px;
+            background-color: rgb(65, 238, 74);
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+        }
+        #login:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(65, 238, 74);
+            border: 2px solid rgb(65, 238, 74);
+        }
+        #text, #pass{
+            height: 30px;
+            width: 65%;
+        }
+        .footer{
+            margin:30px 18% 0 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(219, 222, 224);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #cancel{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(255, 0, 0);
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            margin-left: 1%;
+        }
+        #cancel:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 0, 0);
+            border: 2px solid rgb(255, 0, 0);
+        }
+        #forpas{
+            font-size: 20px;
+            margin: 3px 1% 0 -40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" alt="img">
+        </div>
+        <div class="details">
+            <a href="#" class="inputs">Username: <input type="text" name="Username" id="text" placeholder="Enter Name"></a>
+            <a href="#" class="inputs">Password: <input type="password" name="password" id="pass" placeholder="Enter Password"></a>
+            <a href="#"><input type="submit" name="submit" value="Login" id="login"></a>
+            <a href="#"class="inputs"><input type="checkbox" name="checkbox">Remember me</a>
+        </div>
+        <div class="footer">
+            <input type="submit" name="cancel" value="Cancel" id="cancel">
+            <a href="#" id="forpas">Forgot Password?</a>
+        </div>
+    </div>
+    
+</body>
+</html>
